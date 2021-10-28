@@ -14,20 +14,6 @@ keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
 array_with_buttons_1 = ["Скачать фото/видео из аккаунта", "Получить информацию о профиле"]
 keyboard.add(*array_with_buttons_1)
 
-#
-# @dp.message_handler(commands=["info"])
-# async def get_bot_info(message: types.Message):
-#     await message.answer("!!! ВНИМАНИЕ КРИСТИНОЧКА!!!")
-#     await message.answer("Если ты хочешь парсить закрытые аккаунты, то ничего не получится")
-#     await message.answer(
-#         "Если хочешь, я могу сделать так чтобы ты в свой аккаунт входила и смотрела страницы, на которые подписана")
-#     await message.answer("В том числе и закрытые")
-#     await message.answer("А так только открытые")
-#     await message.answer("Да и вообще, я этим ботом поиграться просто хотел, да  и я ленивый")
-#     await message.answer("Так что пользуйся пока тем что есть")
-#     await message.answer("😘")
-#     await message.answer("Напиши /start для начала работы")
-
 
 @dp.message_handler(commands=["start"])
 async def start(message: types.Message):
